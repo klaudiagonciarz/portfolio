@@ -4687,19 +4687,22 @@ input, select, textarea {
 		}
 
 	}
+/* === Adaptive layout fix: laptop-friendly, wide-screen smart === */
 #wrapper {
-    max-width: 1280px;   /* increased from 1200px */
+    max-width: 90vw;     /* relative width for flexibility */
+    max-width: min(1400px, 90vw);  /* don't stretch too much */
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 body {
-    font-size: 1em;       /* restore default size */
-    line-height: 1.65;    /* keeps it easy to read */
+    font-size: 1em;       /* default readable size */
+    line-height: 1.65;
 }
 
 @media screen and (min-width: 1600px) {
     #wrapper {
-        max-width: 1200px;  /* still slightly constrained on huge screens */
+        max-width: 1300px;   /* more generous on ultra-wide screens */
     }
 }
+
