@@ -4702,7 +4702,7 @@ body {
 
 @media screen and (min-width: 1600px) {
     #wrapper {
-        max-width: 1300px;   /* more generous on ultra-wide screens */
+        max-width: 1400px;   /* more generous on ultra-wide screens */
     }
 }
 
